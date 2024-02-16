@@ -26,16 +26,15 @@ The repository contains the scripts that are used to program an ATOM-Lite from M
 - Upload the program using the vs code's platformIO interface
 - Open Serial Monitor for verification
 
-## Dashbaord
+## Dashboard
 
 ### Consideration
-- Change the topics and AWS secret keys appropriately for your new IoT device.
-    - DO NOT use the one in the repo as it is being used by other IoT devices. 
+- Change the topics and AWS secret keys appropriately for your new IoT device. 
 - Change the device ID appropriately, if you are uploading to multiple devices.
 - Change the WiFi credential appropriately.
     - If using UWNet, then make sure that the device's Mac Address is added to the UWNet. Otherwise, you won't be able to connect to the internet.
 - Verify the sensor's Slave address.
-- Ensure that the ```num_sensors``` variable is set to the right number of sensors.
+- Ensure that the ```num_sensors``` variable is set to the correct number of sensors.
 - Different sensors will have different registers to read. This code is only for the sensor [TSH300v2](https://www.paralanstore.net/teracom-systems/sensor-modbus-rtu/teracom-digital-humidity-and-temperature-sensor-tsh300v2). If you are using other sensors, make sure to do the following
     - Update register addresses
     - Update the number of registers to read
